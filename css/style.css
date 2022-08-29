@@ -26,6 +26,9 @@ h6 {
   100% {
     opacity: 1; } }
 
+menu-nav {
+  display: flex; }
+
 body {
   font-family: "Roboto", sans-serif; }
 
@@ -36,6 +39,41 @@ body {
 .text-center {
   text-align: center;
   width: 70%; }
+
+.menu-title {
+  font-family: "Shrikhand", cursive;
+  position: relative; }
+
+.category-title::after {
+  position: relative;
+  top: 10px;
+  right: 85px;
+  color: #99E2D0;
+  content: "____"; }
+
+.off-ctgTitle::after {
+  position: relative;
+  top: 10px;
+  right: 60px;
+  color: #99E2D0;
+  content: "____"; }
+
+@media (max-width: 710px) {
+  .item-title {
+    font-size: 12px; } }
+
+@media (max-width: 710px) {
+  .item-text {
+    margin-top: 30px; }
+  .select {
+    width: 25% !important; }
+  .price {
+    position: relative;
+    left: 70px;
+    width: 10% !important; }
+  .category-title {
+    text-align: left;
+    width: 80%; } }
 
 .top-btn {
   border: none;
@@ -497,11 +535,6 @@ footer {
 .category-item {
   min-width: 300px; }
 
-.menu-title {
-  position: relative;
-  left: -110px;
-  margin: 10px; }
-
 .entrée {
   margin: auto;
   border-radius: 0; }
@@ -518,7 +551,7 @@ footer {
   .entrée-last {
     border-radius: 0 0 25px 25px; }
   .btn-container {
-    width: 50%;
+    width: 90%;
     margin: auto;
     background-color: #fff;
     padding-bottom: 50px;

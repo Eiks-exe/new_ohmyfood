@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import "../utilities/variables", "../utilities/mixins";
 
 body {
   font-family: "Roboto", sans-serif;
@@ -14,4 +15,52 @@ body {
   width: 70%;
 }
 
+.menu-title {
+  font-family: "Shrikhand", cursive;
+  position: relative;
+}
 
+.category-title{
+  &::after{
+    position: relative;
+    top: 10px;
+    right: 85px;
+    color:$third;
+    content: "____";
+  }
+}
+
+.off-ctgTitle{
+  &::after{
+    position: relative;
+    top: 10px;
+    right: 60px;
+    color:$third;
+    content: "____";
+  }
+}
+
+.item-title{
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
+@include mobile {
+  .item-text{
+    margin-top: 30px;
+  }
+  .select {
+   width: 25% !important; 
+   
+  }
+  .price {
+    position: relative;
+    left: 70px;
+    width: 10% !important;
+  }
+  .category-title {
+    text-align: left;
+    width: 80%;
+  }
+}
