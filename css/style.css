@@ -489,8 +489,7 @@ footer {
     white-space: nowrap;
     font-size: 18px;
     height: 100%;
-    transition: width 500ms ease;
-    border: 1px solid; }
+    transition: width 500ms ease; }
 
 .img-menu {
   height: 300px; }
