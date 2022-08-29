@@ -1,0 +1,226 @@
+@import "../utilities/variables", "../utilities/mixins";
+
+.menu-main {
+  &-1 {
+    background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  }
+  &-2 {
+    background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  }
+  &-3 {
+    background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  }
+  &-4 {
+    background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  }
+  &-1,
+  &-2,
+  &-3,
+  &-4 {
+    background-size: 120%;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+.entrée {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.image-menu {
+  height: 300px;
+  width: 100px;
+  z-index: index -5;
+}
+
+.category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  row-gap: 20px;
+  animation: 1 ease-in 0.5s apparition;
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px;
+    padding: 0px 0px 0px 10px;
+    font-size: 18spx;
+    overflow: hidden;
+    translate: 0 10px;
+    animation: 1 linear 2s opacity;
+  }
+  &-title {
+    margin-top: 20px;
+  }
+}
+
+.starter {
+  .category-item {
+    &:first-child {
+      animation: fadein 1s linear;
+    }
+    &:nth-child(2) {
+      animation: fadein 2s linear;
+    }
+    &:nth-child(3) {
+      animation: fadein 3s linear;
+    }
+  }
+}
+
+.dish {
+  .category-item {
+    &:first-child {
+      animation: fadein 4s linear;
+    }
+    &:nth-child(2) {
+      animation: fadein 5s linear;
+    }
+    &:nth-child(3) {
+      animation: fadein 6s linear;
+    }
+  }
+}
+.dessert {
+  .category-item {
+    &:first-child {
+      animation: fadein 6.5s linear;
+    }
+    &:nth-child(2) {
+      animation: fadein 7s linear;
+    }
+    &:nth-child(3) {
+      animation: fadein 7.5s linear;
+    }
+  }
+}
+
+.item-title {
+  font-weight: 900;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.price {
+  position: relative;
+  left: 50px;
+  top:30px;
+  transition: transform 500ms ease-in-out;
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  flex: end;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 95%;
+  font-weight: 900;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  .select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+    background: $third;
+    position: relative;
+    right: -80px;
+    transition: transform 500ms ease-in-out;
+  }
+  &:hover .select {
+    opacity: 1;
+    transform: translate(-80px);
+  }
+  &:hover .price {
+    opacity: 1;
+    transform: translate(-80px);
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:hover .item-text{
+    width: 50%;
+  }
+  &:hover .fa-circle-check {
+    animation: 1 ease-in 1s spin;
+  }
+
+  .item-text {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+    height: 100%;
+    transition: width 500ms ease;
+    border: 1px solid;
+  }
+}
+
+.img-menu {
+  height: 300px;
+}
+
+.category-item {
+  min-width: 300px;
+}
+.menu-title {
+  position: relative;
+  left: -110px;
+  margin: 10px;
+}
+.entrée {
+  margin: auto;
+  border-radius: 0;
+  @include for-desktop {
+    width: 50%;
+  }
+}
+.first-entry {
+  border-radius: 25px 25px 0 0;
+}
+@media all and (max-width: 1920px) {
+  .category {
+    width: 50%;
+  }
+
+  .entrée-last {
+    border-radius: 0 0 25px 25px;
+  }
+
+  .btn-container {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding-bottom: 50px;
+    position: relative;
+    bottom: 50px;
+  }
+  .menu-main-1,
+  .menu-main-2,
+  .menu-main-3,
+  .menu-main-4 {
+    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: 130%;
+    background-position: -120px 0px;
+    background-repeat: no-repeat;
+  }
+}

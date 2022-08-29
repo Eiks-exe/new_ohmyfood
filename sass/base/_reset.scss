@@ -1,0 +1,31 @@
+body {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main,
+header,
+footer {
+  animation: 1 ease-in 3s loading;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder;
+  margin: 0;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

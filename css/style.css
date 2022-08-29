@@ -1,0 +1,561 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+body {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden; }
+
+main,
+header,
+footer {
+  animation: 1 ease-in 3s loading; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder;
+  margin: 0; }
+
+@keyframes loading {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+#logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 64px; }
+
+.text-center {
+  text-align: center;
+  width: 70%; }
+
+.top-btn {
+  border: none;
+  height: 100px;
+  min-width: 20%;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 50px;
+  color: white;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%, #00d4ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  transition: background 1s ease-in 100ms; }
+  .top-btn:hover {
+    background: #9356DC; }
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+  top: 0px; }
+
+.order-btn {
+  width: 70%;
+  opacity: 1; }
+
+.icon-d {
+  transition: color 1s ease-in-out 100ms; }
+
+.solid-h {
+  position: relative;
+  right: 40px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out 100ms;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 1s ease-in-out 100ms; }
+  .solid-h:hover {
+    opacity: 1; }
+
+.fa-heart {
+  font-size: 40px; }
+  @media (min-width: 1800px) {
+    .fa-heart {
+      justify-self: end;
+      position: relative;
+      left: 230px; } }
+
+.fa-circle-check {
+  color: white;
+  font-size: 24px; }
+
+nav {
+  height: 100px;
+  box-shadow: 1px 1px  20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0; }
+
+#logo {
+  position: relative;
+  top: 10px; }
+
+.location {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  background: #dbdbdb;
+  color: #525252;
+  font-weight: 900;
+  position: relative; }
+
+footer {
+  background: #282828;
+  color: white;
+  width: 100%;
+  height: 150px;
+  padding-top: 10px; }
+  footer .title {
+    font-family: "Shrikhand", cursive; }
+  footer ul {
+    list-style: none;
+    margin: 0; }
+    footer ul li {
+      height: 30px; }
+      footer ul li a {
+        text-decoration: none;
+        color: white; }
+        footer ul li a:visited {
+          color: inherit; }
+
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  height: 80vh;
+  gap: 20px;
+  background: #f2f2f2;
+  text-align: center; }
+  #top h1 {
+    font-weight: 900;
+    width: 100;
+    text-align: center; }
+  #top sub {
+    color: #acacac; }
+
+#fonctionement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px; }
+
+#fonctionement h1 {
+  align-self: start; }
+
+.step-container, .number-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  @media (min-width: 1800px) {
+    .step-container, .number-container {
+      flex-direction: row; } }
+
+.number-container {
+  position: absolute;
+  pointer-events: none; }
+
+.step, .number-wrap {
+  height: 100px;
+  border-radius: 45px;
+  width: 80%;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 1800px) {
+    .step, .number-wrap {
+      width: 26%; } }
+
+.step {
+  background: #f2f2f2;
+  box-shadow: 5px 10px 20px 1px;
+  transition: background 1s ease-in-out 100ms;
+  white-space: nowrap; }
+
+.step:hover {
+  background: rgba(214, 186, 248, 0.964706); }
+
+.step:hover .icon-d {
+  color: #9356DC; }
+
+.number-wrap {
+  position: relative;
+  top: 40px;
+  pointer-events: none; }
+
+.number {
+  position: relative;
+  background: #9356DC;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 165px;
+  color: white; }
+  @media (min-width: 1800px) {
+    .number:nth-child(1) {
+      position: relative;
+      right: 245px; } }
+
+#restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+  #restaurant h1 {
+    font-size: 48px;
+    align-self: start; }
+
+.card-container {
+  display: flex;
+  height: fit-content;
+  width: 75%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px; }
+  .card-container a {
+    text-decoration: none;
+    color: #000; }
+    .card-container a:visited {
+      color: #000; }
+
+.card {
+  width: 45%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px 1px;
+  min-width: 350px;
+  min-height: 270px; }
+  @media (min-width: 1800px) {
+    .card {
+      height: 400px; } }
+  .card:visited {
+    color: black; }
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 90px; }
+    .card-content .title {
+      font-size: 24px; }
+  .card-text {
+    margin: 10px 0 20px 15px; }
+    .card-text h3 {
+      margin: 0; }
+  .card-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #d3d3d3; }
+  .card-img {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 80%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .card:first-child .card-img {
+    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"); }
+  .card:nth-child(2) > .card-img {
+    background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"); }
+  .card:nth-child(3) > .card-img {
+    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"); }
+  .card:last-child > .card-img {
+    background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"); }
+
+.new {
+  font-size: 16px;
+  width: 20%;
+  padding: 5px;
+  background: #99E2D0;
+  color: #007558;
+  border-radius: 3px;
+  text-align: center;
+  position: absolute;
+  left: 68%;
+  margin-top: 15px;
+  box-shadow: 1px 1px 20px black; }
+  @media (min-width: 1800px) {
+    .new {
+      width: 5%;
+      left: 1430px; } }
+
+.lds-ring {
+  display: inline-block;
+  position: absolute;
+  top: 400px;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  animation: ease-in-out 10s vanish 1; }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #5e5e5e transparent transparent transparent; }
+    .lds-ring div:nth-child(1) {
+      animation-delay: -1s; }
+    .lds-ring div:nth-child(2) {
+      animation-delay: -0.5s; }
+    .lds-ring div:nth-child(3) {
+      animation-delay: -0.10s; }
+
+#fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%; }
+  #fonctionnement h1 {
+    font-size: 32px;
+    margin: 20px; }
+
+#restaurant h1 {
+  font-size: 32px; }
+
+.menu-main-1 {
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"); }
+
+.menu-main-2 {
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"); }
+
+.menu-main-3 {
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"); }
+
+.menu-main-4 {
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"); }
+
+.menu-main-1, .menu-main-2, .menu-main-3, .menu-main-4 {
+  background-size: 120%;
+  background-position: 0px 0px;
+  background-repeat: no-repeat; }
+
+.entrée {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0 0; }
+
+.image-menu {
+  height: 300px;
+  width: 100px;
+  z-index: index -5; }
+
+.category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  row-gap: 20px;
+  animation: 1 ease-in 0.5s apparition; }
+  .category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px;
+    padding: 0px 0px 0px 10px;
+    font-size: 18spx;
+    overflow: hidden;
+    translate: 0 10px;
+    animation: 1 linear 2s opacity; }
+  .category-title {
+    margin-top: 20px; }
+
+.starter .category-item:first-child {
+  animation: fadein 1s linear; }
+
+.starter .category-item:nth-child(2) {
+  animation: fadein 2s linear; }
+
+.starter .category-item:nth-child(3) {
+  animation: fadein 3s linear; }
+
+.dish .category-item:first-child {
+  animation: fadein 4s linear; }
+
+.dish .category-item:nth-child(2) {
+  animation: fadein 5s linear; }
+
+.dish .category-item:nth-child(3) {
+  animation: fadein 6s linear; }
+
+.dessert .category-item:first-child {
+  animation: fadein 6.5s linear; }
+
+.dessert .category-item:nth-child(2) {
+  animation: fadein 7s linear; }
+
+.dessert .category-item:nth-child(3) {
+  animation: fadein 7.5s linear; }
+
+.item-title {
+  font-weight: 900;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.price {
+  position: relative;
+  left: 50px;
+  top: 30px;
+  transition: transform 500ms ease-in-out;
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  flex: end;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 95%;
+  font-weight: 900; }
+
+.category-item {
+  display: flex;
+  align-items: center; }
+  .category-item .select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+    background: #99E2D0;
+    position: relative;
+    right: -80px;
+    transition: transform 500ms ease-in-out; }
+  .category-item:hover .select {
+    opacity: 1;
+    transform: translate(-80px); }
+  .category-item:hover .price {
+    opacity: 1;
+    transform: translate(-80px); }
+    .category-item:hover .price:before {
+      opacity: 1; }
+  .category-item:hover .item-text {
+    width: 50%; }
+  .category-item:hover .fa-circle-check {
+    animation: 1 ease-in 1s spin; }
+  .category-item .item-text {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+    height: 100%;
+    transition: width 500ms ease;
+    border: 1px solid; }
+
+.img-menu {
+  height: 300px; }
+
+.category-item {
+  min-width: 300px; }
+
+.menu-title {
+  position: relative;
+  left: -110px;
+  margin: 10px; }
+
+.entrée {
+  margin: auto;
+  border-radius: 0; }
+  @media (min-width: 1800px) {
+    .entrée {
+      width: 50%; } }
+
+.first-entry {
+  border-radius: 25px 25px 0 0; }
+
+@media all and (max-width: 1920px) {
+  .category {
+    width: 50%; }
+  .entrée-last {
+    border-radius: 0 0 25px 25px; }
+  .btn-container {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding-bottom: 50px;
+    position: relative;
+    bottom: 50px; }
+  .menu-main-1,
+  .menu-main-2,
+  .menu-main-3,
+  .menu-main-4 {
+    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: 130%;
+    background-position: -120px 0px;
+    background-repeat: no-repeat; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(10px); }
+  to {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg); } }
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes vanish {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
