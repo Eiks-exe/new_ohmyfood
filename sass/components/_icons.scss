@@ -27,6 +27,14 @@
   }
 }
 
+.solid-h {
+  @include for-desktop {
+    position: relative;
+    left: 190px;
+    
+  }
+}
+
 .fa-circle-check {
   color: white;
   font-size: 24px;

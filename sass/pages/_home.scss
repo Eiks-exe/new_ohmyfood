@@ -212,11 +212,16 @@
   display: inline-block;
   position: absolute;
   top: 400px;
-  left: 40%;
+  left: 47%;
   width: 80px;
   height: 80px;
   opacity: 0;
-  animation: ease-in-out 10s vanish 1;
+  animation: ease-in-out 3s vanish 1;
+  @include mobile {
+    position: absolute;
+    top: 400px;
+    left: 40%;
+  }
   div {
     box-sizing: border-box;
     display: block;

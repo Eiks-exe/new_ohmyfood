@@ -12,9 +12,9 @@
     align-items: center;
     font-size: 24px;
     font-weight: 700;
-    transition: background 1s ease-in 100ms;
+    transition: background 1s ease-in 500ms;
     &:hover{
-        background: #9356DC;  
+        background: linear-gradient(180deg, rgb(255, 66, 202) 0%, rgb(189, 136, 255) 100%, rgb(0, 212, 255) 100%);  
     }  
 }
 
