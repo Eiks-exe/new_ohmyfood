@@ -35,7 +35,7 @@
 .image-menu {
   height: 300px;
   width: 100px;
-  z-index: index -5;
+  z-index:-5;
 }
 
 .category {
@@ -58,9 +58,9 @@
     border-radius: 20px;
     box-shadow: 1px 1px 20px;
     padding: 0px 0px 0px 10px;
-    font-size: 18spx;
+    font-size: 18px;
     overflow: hidden;
-    translate: 0 10px;
+    transform: translateY(10px);
     animation: 1 linear 2s opacity;
   }
   &-title {
@@ -123,7 +123,6 @@
   margin: 0;
   align-self: center;
   text-align: center;
-  flex: end;
   margin: 0;
   padding: 0;
   width: 70px;

@@ -25,17 +25,35 @@
     position: relative;
     left: 230px;
   }
+  @include mobile {
+  }
 }
 
 .solid-h {
   @include for-desktop {
     position: relative;
     left: 190px;
-    
+  }
+  @include mobile {
+    width: 12.3%;
+    text-align: end;
+    align-self: center;
+    font-size: xx-large;
+    color: gray;
   }
 }
 
 .fa-circle-check {
   color: white;
   font-size: 24px;
+}
+
+.test {
+  @include mobile {
+    width: 10%;
+    text-align: end;
+    align-self: center;
+    font-size: xx-large;
+    color: gray;
+  }
 }

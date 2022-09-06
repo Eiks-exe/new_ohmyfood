@@ -77,8 +77,8 @@ body {
 
 .top-btn {
   border: none;
-  height: 100px;
-  min-width: 20%;
+  height: 80px;
+  min-width: 15%;
   padding: 20px;
   margin-top: 50px;
   border-radius: 50px;
@@ -191,10 +191,25 @@ footer {
   text-align: center; }
   #top h1 {
     font-weight: 900;
-    width: 100;
+    width: 100%;
     text-align: center; }
-  #top sub {
-    color: #acacac; }
+  @media (max-width: 710px) {
+    #top {
+      font-weight: bolder;
+      font-size: 20px;
+      text-align: center;
+      padding: 0 30px 0 30px; }
+      #top h1 {
+        padding: 0 30px 0 30px; }
+      #top sub {
+        font-weight: 400;
+        font-size: 20px; } }
+
+.location {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: center; }
 
 #fonctionement {
   display: flex;
@@ -428,7 +443,7 @@ footer {
 .image-menu {
   height: 300px;
   width: 100px;
-  z-index: index -5; }
+  z-index: -5; }
 
 .category {
   width: 100%;
@@ -450,9 +465,9 @@ footer {
     border-radius: 20px;
     box-shadow: 1px 1px 20px;
     padding: 0px 0px 0px 10px;
-    font-size: 18spx;
+    font-size: 18px;
     overflow: hidden;
-    translate: 0 10px;
+    transform: translateY(10px);
     animation: 1 linear 2s opacity; }
   .category-title {
     margin-top: 20px; }
@@ -498,7 +513,6 @@ footer {
   margin: 0;
   align-self: center;
   text-align: center;
-  flex: end;
   margin: 0;
   padding: 0;
   width: 70px;

@@ -77,21 +77,25 @@ body {
 
 .top-btn {
   border: none;
-  height: 100px;
+  height: 35px;
   min-width: 20%;
   padding: 20px;
   margin-top: 50px;
-  border-radius: 50px;
+  border-radius: 60px;
   color: white;
-  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%, #00d4ff 100%);
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%, #9356dc 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  font-weight: 700;
-  transition: background 1s ease-in 500ms; }
+  font-size: 20px;
+  font-weight: 100;
+  transition: background 1s ease-in 500ms;
+  box-shadow: 1px 5px 10px #a8a8a8;
+  text-decoration: none; }
   .top-btn:hover {
     background: linear-gradient(180deg, #ff42ca 0%, #bd88ff 100%, #00d4ff 100%); }
+  .top-btn:visited {
+    color: white; }
 
 .btn-container {
   display: flex;
@@ -133,32 +137,54 @@ body {
     position: relative;
     left: 190px; } }
 
+@media (max-width: 710px) {
+  .solid-h {
+    width: 12.3%;
+    text-align: end;
+    align-self: center;
+    font-size: xx-large;
+    color: gray; } }
+
 .fa-circle-check {
   color: white;
   font-size: 24px; }
 
+@media (max-width: 710px) {
+  .test {
+    width: 10%;
+    text-align: end;
+    align-self: center;
+    font-size: xx-large;
+    color: gray; } }
+
 nav {
-  height: 100px;
-  box-shadow: 1px 1px  20px;
+  min-height: 70px;
+  height: 100%;
+  box-shadow: 5px 5px 10px #a3a3a3;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  z-index: 10; }
 
 #logo {
   position: relative;
-  top: 10px; }
+  font-size: 32px; }
+  @media (min-width: 1800px) {
+    #logo {
+      font-size: 64px; } }
 
 .location {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   padding: 20px 0 20px 0;
   background: #dbdbdb;
-  color: #525252;
+  color: #363636;
   font-weight: 900;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
 
 footer {
   background: #282828;
@@ -190,11 +216,29 @@ footer {
   background: #f2f2f2;
   text-align: center; }
   #top h1 {
-    font-weight: 900;
-    width: 100;
+    font-weight: bolder;
+    width: 90%;
     text-align: center; }
-  #top sub {
-    color: #acacac; }
+  @media (max-width: 710px) {
+    #top {
+      max-height: 500px;
+      height: 100%;
+      font-weight: bolder;
+      font-size: 20px;
+      text-align: center;
+      padding: 50px 30px 80px 30px; }
+      #top h1 {
+        padding: 0 30px 0 30px; }
+      #top sub {
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(78, 78, 78, 0.965); } }
+
+.location {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: center; }
 
 #fonctionement {
   display: flex;
@@ -203,8 +247,11 @@ footer {
   align-items: center;
   font-size: 32px; }
 
-#fonctionement h1 {
-  align-self: start; }
+.func-title {
+  position: relative;
+  right: 55px;
+  top: 60px;
+  font-size: 20px; }
 
 .step-container, .number-container {
   display: flex;
@@ -214,7 +261,7 @@ footer {
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 30px;
   margin-top: 100px;
   margin-bottom: 100px; }
   @media (min-width: 1800px) {
@@ -226,8 +273,8 @@ footer {
   pointer-events: none; }
 
 .step, .number-wrap {
-  height: 100px;
-  border-radius: 45px;
+  height: 80px;
+  border-radius: 30px;
   width: 80%;
   min-width: 100px;
   display: flex;
@@ -239,12 +286,21 @@ footer {
 
 .step {
   background: #f2f2f2;
-  box-shadow: 5px 10px 20px 1px;
+  box-shadow: 5px 5px 20px 1px #d3d3d3;
   transition: background 1s ease-in-out 100ms;
   white-space: nowrap; }
+  .step .text {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    font-weight: 900;
+    font-size: 18px; }
+  .step .icon-d {
+    color: #5e5e5e;
+    font-size: 24px; }
 
 .step:hover {
-  background: rgba(214, 186, 248, 0.964706); }
+  background: rgba(235, 218, 255, 0.965); }
 
 .step:hover .icon-d {
   color: #9356DC; }
@@ -257,8 +313,8 @@ footer {
 .number {
   position: relative;
   background: #9356DC;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -299,7 +355,7 @@ footer {
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 20px 1px;
+  box-shadow: 5px 5px 20px 1px #c2c2c2;
   min-width: 350px;
   min-height: 270px; }
   @media (min-width: 1800px) {
@@ -309,18 +365,22 @@ footer {
     color: black; }
   .card-content {
     display: flex;
-    flex-direction: row;
-    gap: 90px; }
+    flex-direction: row; }
     .card-content .title {
-      font-size: 24px; }
+      white-space: nowrap;
+      font-weight: 600; }
+      @media (max-width: 710px) {
+        .card-content .title {
+          font-size: 18px; } }
   .card-text {
-    margin: 10px 0 20px 15px; }
+    margin: 10px 0 20px 15px;
+    width: 80%; }
     .card-text h3 {
       margin: 0; }
+    @media (max-width: 710px) {
+      .card-text sub {
+        font-size: 16px; } }
   .card-action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 24px;
     color: #d3d3d3; }
   .card-img {
@@ -349,7 +409,8 @@ footer {
   position: absolute;
   left: 68%;
   margin-top: 15px;
-  box-shadow: 1px 1px 20px black; }
+  box-shadow: 1px 1px 20px black;
+  font-weight: 900; }
   @media (min-width: 1800px) {
     .new {
       width: 5%;
@@ -428,7 +489,7 @@ footer {
 .image-menu {
   height: 300px;
   width: 100px;
-  z-index: index -5; }
+  z-index: -5; }
 
 .category {
   width: 100%;
@@ -450,9 +511,9 @@ footer {
     border-radius: 20px;
     box-shadow: 1px 1px 20px;
     padding: 0px 0px 0px 10px;
-    font-size: 18spx;
+    font-size: 18px;
     overflow: hidden;
-    translate: 0 10px;
+    transform: translateY(10px);
     animation: 1 linear 2s opacity; }
   .category-title {
     margin-top: 20px; }
@@ -498,7 +559,6 @@ footer {
   margin: 0;
   align-self: center;
   text-align: center;
-  flex: end;
   margin: 0;
   padding: 0;
   width: 70px;
