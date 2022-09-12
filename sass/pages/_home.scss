@@ -250,7 +250,12 @@
   font-weight: 900;
   @include for-desktop{
     width: 5%;
-    left: 1430px;
+    align-items: end;
+    left: 77%;
+    &-1{
+      position: absolute;
+      left: 41%;
+    }
   }
 }
 

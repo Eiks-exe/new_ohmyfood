@@ -17,9 +17,16 @@
   &-2,
   &-3,
   &-4 {
-    background-size: 120%;
+    background-size: 130%;
     background-position: 0px 0px;
     background-repeat: no-repeat;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    @include for-desktop{
+      
+      column-gap:0  ;
+    }
   }
 }
 
@@ -30,6 +37,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px 20px 0 0;
+  @include for-desktop {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .image-menu {
@@ -39,33 +50,40 @@
 }
 
 .category {
-  width: 100%;
+  max-width: 100%;
+  width: 95%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  row-gap: 20px;
+  row-gap: 5px;
   animation: 1 ease-in 0.5s apparition;
+  
   &-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
-    box-shadow: 1px 1px 20px;
+    box-shadow: 1px 1px 10px rgb(146, 145, 145);
     padding: 0px 0px 0px 10px;
     font-size: 18px;
     overflow: hidden;
     transform: translateY(10px);
     animation: 1 linear 2s opacity;
+    @include for-desktop{
+      width: 100%;
+    }
+    @include tablet {
+      column-gap: 0;
+    }
   }
-  &-title {
-    margin-top: 20px;
-  }
+  
 }
 
 .starter {
@@ -120,14 +138,17 @@
   left: 50px;
   top:30px;
   transition: transform 500ms ease-in-out;
-  margin: 0;
-  align-self: center;
-  text-align: center;
+  text-align:center;
   margin: 0;
   padding: 0;
-  width: 70px;
-  height: 95%;
+  height: 85%;
   font-weight: 900;
+  @include for-desktop {
+    left: 30px;
+  }
+  @include tablet {
+    
+  }
 }
 
 .category-item {
@@ -143,20 +164,37 @@
     position: relative;
     right: -80px;
     transition: transform 500ms ease-in-out;
+    @include for-desktop {
+      width: 20%;
+    }
+    @include tablet {
+      right: -85px;
+      margin: 0;
+    }
   }
   &:hover .select {
     opacity: 1;
     transform: translate(-80px);
+    @include tablet {
+    transform: translate(-80px);
+
+    }
   }
   &:hover .price {
     opacity: 1;
-    transform: translate(-80px);
+    transform: translate(-40px);
+    @include tablet {
+      transform: translate(-40px);
+    }
     &:before {
       opacity: 1;
     }
   }
   &:hover .item-text{
     width: 50%;
+    @include tablet {
+      width: 70%;
+    }
   }
   &:hover .fa-circle-check {
     animation: 1 ease-in 1s spin;
@@ -169,7 +207,10 @@
     white-space: nowrap;
     font-size: 18px;
     height: 100%;
-    transition: width 500ms ease;
+    padding-top: 25px;
+    @include tablet {
+      font-size:larger;  
+    }
   }
 }
 
@@ -186,24 +227,34 @@
   border-radius: 0;
   @include for-desktop {
     width: 50%;
+    height: 100%;
   }
 }
 .first-entry {
-  border-radius: 25px 25px 0 0;
+  border-radius: 50px 50px 0 0;
+  @include for-desktop {
+    border-radius: 25px 25px 0 0;
+  }
 }
-@media all and (max-width: 1920px) {
+
+.entrée-last {
+  @include for-desktop {
+  }
+  @include mobile {
+    padding-bottom: 60px ;
+  }
+  @include tablet {
+  }
+}
+@include for-desktop {
   .category {
-    width: 50%;
+    width: 70%;
   }
 
-  .entrée-last {
-    border-radius: 0 0 25px 25px;
-  }
-
+ 
   .btn-container {
     width: 90%;
     margin: auto;
-    background-color: #fff;
     padding-bottom: 50px;
     position: relative;
     bottom: 50px;
@@ -218,3 +269,5 @@
     background-repeat: no-repeat;
   }
 }
+
+

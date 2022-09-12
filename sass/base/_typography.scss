@@ -17,7 +17,13 @@ body {
 
 .menu-title {
   font-family: "Shrikhand", cursive;
-  position: relative;
+  width: 100%;
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom:10%;
+  @include for-desktop {
+   
+  }
 }
 
 .category-title{
@@ -42,25 +48,13 @@ body {
 
 .item-title{
   @include mobile {
-    font-size: 12px;
   }
 }
 
 @include mobile {
-  .item-text{
-    margin-top: 30px;
-  }
-  .select {
-   width: 25% !important; 
-   
-  }
-  .price {
-    position: relative;
-    left: 70px;
-    width: 10% !important;
-  }
+  
   .category-title {
     text-align: left;
-    width: 80%;
+    width: 85%;
   }
 }

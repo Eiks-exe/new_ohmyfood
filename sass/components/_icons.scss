@@ -21,9 +21,7 @@
 .fa-heart {
   font-size: 40px;
   @include for-desktop {
-    justify-self: end;
-    position: relative;
-    left: 230px;
+    
   }
   @include mobile {
   }
@@ -31,8 +29,7 @@
 
 .solid-h {
   @include for-desktop {
-    position: relative;
-    left: 190px;
+    align-self: center;
   }
   @include mobile {
     width: 12.3%;
@@ -49,11 +46,24 @@
 }
 
 .test {
+  color: gray;
+  align-self: center;
   @include mobile {
     width: 10%;
     text-align: end;
-    align-self: center;
     font-size: xx-large;
-    color: gray;
+  }
+  @include for-desktop {
+    text-align: end;
+    width: 20%;
+  }
+}
+
+.menu-heart{
+  @include mobile {
+    font-size: xx-large;
+    position: absolute;
+    top: 56%;
+    right:10%;
   }
 }
