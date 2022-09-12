@@ -19,7 +19,6 @@
 }
 
 .fa-heart {
-  font-size: 40px;
   @include for-desktop {
     
   }
@@ -48,22 +47,28 @@
 .test {
   color: gray;
   align-self: center;
+  font-size: 40px;
+  margin: 5%;
+  &:hover{
+    font: var(--fa-font-solid);
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+  }
   @include mobile {
     width: 10%;
     text-align: end;
-    font-size: xx-large;
   }
   @include for-desktop {
     text-align: end;
     width: 20%;
+    
   }
 }
 
 .menu-heart{
   @include mobile {
-    font-size: xx-large;
-    position: absolute;
-    top: 56%;
-    right:10%;
+    
   }
 }

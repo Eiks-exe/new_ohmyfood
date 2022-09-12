@@ -6,7 +6,10 @@ footer {
   padding-top: 10px;
   .title {
     font-family: "Shrikhand", cursive;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    @include mobile{
+      margin-bottom: 10px;
+    }
   }
   ul {
     list-style: none;
@@ -42,8 +45,8 @@ footer {
   }
   ul {
     .title {
+      margin-bottom: 30px;
       @include for-desktop {
-        margin: 0;
       }
     }
   }

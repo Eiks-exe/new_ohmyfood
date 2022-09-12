@@ -43,8 +43,7 @@ body {
 .menu-title {
   font-family: "Shrikhand", cursive;
   width: 100%;
-  margin-left: 15%;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 10%; }
 
 .category-title::after {
@@ -53,6 +52,11 @@ body {
   right: 85px;
   color: #99E2D0;
   content: "____"; }
+
+@media (min-width: 1024px) {
+  .category-title {
+    width: 100%;
+    margin-left: 29%; } }
 
 .off-ctgTitle::after {
   position: relative;
@@ -64,7 +68,8 @@ body {
 @media (max-width: 480px) {
   .category-title {
     text-align: left;
-    width: 85%; } }
+    width: 100%;
+    margin-left: 10%; } }
 
 .top-btn {
   border: none;
@@ -95,7 +100,7 @@ body {
   margin-bottom: 50px;
   position: relative;
   top: 0px; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .btn-container {
       background-color: rgba 0, 0, 0, 0; } }
 
@@ -113,6 +118,9 @@ body {
     background: linear-gradient(180deg, #ff42ca 0%, #bd88ff 100%, #00d4ff 100%); }
   .order-btn:visited {
     color: white; }
+  @media (min-width: 1024px) {
+    .order-btn {
+      margin-bottom: 5%; } }
   @media (max-width: 480px) {
     .order-btn {
       height: 70px;
@@ -140,10 +148,7 @@ body {
   .solid-h:hover {
     opacity: 1; }
 
-.fa-heart {
-  font-size: 40px; }
-
-@media (min-width: 1800px) {
+@media (min-width: 1024px) {
   .solid-h {
     align-self: center; } }
 
@@ -161,23 +166,23 @@ body {
 
 .test {
   color: gray;
-  align-self: center; }
+  align-self: center;
+  font-size: 40px;
+  margin: 5%; }
+  .test:hover {
+    font: var(--fa-font-solid);
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px; }
   @media (max-width: 480px) {
     .test {
       width: 10%;
-      text-align: end;
-      font-size: xx-large; } }
-  @media (min-width: 1800px) {
+      text-align: end; } }
+  @media (min-width: 1024px) {
     .test {
       text-align: end;
       width: 20%; } }
-
-@media (max-width: 480px) {
-  .menu-heart {
-    font-size: xx-large;
-    position: absolute;
-    top: 56%;
-    right: 10%; } }
 
 nav {
   min-height: 70px;
@@ -194,7 +199,7 @@ nav {
 #logo {
   position: relative;
   font-size: 32px; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     #logo {
       font-size: 64px; } }
 
@@ -216,14 +221,17 @@ footer {
   padding-top: 10px; }
   footer .title {
     font-family: "Shrikhand", cursive;
-    margin-bottom: 10px; }
+    margin-bottom: 30px; }
+    @media (max-width: 480px) {
+      footer .title {
+        margin-bottom: 10px; } }
   footer ul {
     list-style: none;
     margin: 0; }
     footer ul li {
       height: 30px;
       width: 100%; }
-      @media (min-width: 1800px) {
+      @media (min-width: 1024px) {
         footer ul li {
           height: 15px;
           margin: 10px 0 10px 0; } }
@@ -238,9 +246,18 @@ footer {
         display: flex;
         column-gap: 15px; }
 
-@media (min-width: 1800px) {
-  .menu-footer ul .title {
-    margin: 0; } }
+.menu-footer ul .title {
+  margin-bottom: 30px; }
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center; }
+  .nav-menu div {
+    width: 20%; }
+  .nav-menu h1 {
+    width: 100%; }
 
 #top {
   display: flex;
@@ -301,7 +318,7 @@ footer {
   gap: 30px;
   margin-top: 100px;
   margin-bottom: 100px; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .step-container, .number-container {
       flex-direction: row; } }
 
@@ -317,7 +334,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .step, .number-wrap {
       width: 26%; } }
 
@@ -329,12 +346,17 @@ footer {
   .step .text {
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
-    font-weight: 900;
-    font-size: 18px; }
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    font-weight: 700;
+    font-size: 17,5px;
+    text-align: justify;
+    width: 70%;
+    margin: 0; }
   .step .icon-d {
     color: #5e5e5e;
-    font-size: 24px; }
+    font-size: 20px; }
 
 .step:hover {
   background: rgba(235, 218, 255, 0.965); }
@@ -357,12 +379,12 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 165px;
+  right: 155px;
   color: white; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .number:nth-child(1) {
       position: relative;
-      right: 245px; } }
+      right: 220px; } }
 
 #restaurant {
   display: flex;
@@ -395,7 +417,7 @@ footer {
   box-shadow: 5px 5px 20px 1px #c2c2c2;
   min-width: 350px;
   min-height: 270px; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .card {
       height: 400px; } }
   .card:visited {
@@ -448,7 +470,7 @@ footer {
   margin-top: 15px;
   box-shadow: 1px 1px 20px black;
   font-weight: 900; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .new {
       width: 5%;
       align-items: end;
@@ -521,7 +543,7 @@ footer {
   height: 100%;
   margin: 0%;
   padding: 0%; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .menu-main-1, .menu-main-2, .menu-main-3, .menu-main-4 {
       column-gap: 0; } }
 
@@ -532,7 +554,7 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 20px 20px 0 0; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .entrée {
       justify-content: center;
       align-items: center; } }
@@ -568,9 +590,9 @@ footer {
     overflow: hidden;
     transform: translateY(10px);
     animation: 1 linear 2s opacity; }
-    @media (min-width: 1800px) {
+    @media (min-width: 1024px) {
       .category-item {
-        width: 100%; } }
+        width: 75%; } }
     @media (min-width: 767px) {
       .category-item {
         column-gap: 0; } }
@@ -618,7 +640,7 @@ footer {
   padding: 0;
   height: 85%;
   font-weight: 900; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .price {
       left: 30px; } }
 
@@ -635,9 +657,6 @@ footer {
     position: relative;
     right: -80px;
     transition: transform 500ms ease-in-out; }
-    @media (min-width: 1800px) {
-      .category-item .select {
-        width: 20%; } }
     @media (min-width: 767px) {
       .category-item .select {
         right: -85px;
@@ -684,14 +703,13 @@ footer {
 .entrée {
   margin: auto;
   border-radius: 0; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .entrée {
-      width: 50%;
-      height: 100%; } }
+      padding: 0 20% 0 20%; } }
 
 .first-entry {
   border-radius: 50px 50px 0 0; }
-  @media (min-width: 1800px) {
+  @media (min-width: 1024px) {
     .first-entry {
       border-radius: 25px 25px 0 0; } }
 
@@ -699,23 +717,22 @@ footer {
   .entrée-last {
     padding-bottom: 60px; } }
 
-@media (min-width: 1800px) {
-  .category {
-    width: 70%; }
-  .btn-container {
-    width: 90%;
-    margin: auto;
-    padding-bottom: 50px;
-    position: relative;
-    bottom: 50px; }
-  .menu-main-1,
-  .menu-main-2,
-  .menu-main-3,
-  .menu-main-4 {
-    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-size: 130%;
-    background-position: -120px 0px;
-    background-repeat: no-repeat; } }
+.menu-t {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%; }
+  @media (min-width: 1024px) {
+    .menu-t {
+      width: 70%; } }
+
+.icon-t {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  font-size: 28px; }
 
 @keyframes fadein {
   from {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,24 @@
     <script src="https://kit.fontawesome.com/93612cedef.js" crossorigin="anonymous"></script>
     <title>Menu - à la francaise</title>
 </head>
-<body>
+
+<body class="menu-body">
     <header>
-        <nav>
+        <nav class="nav-menu">
+            <div>
+                <i class="fas fa-arrow-left"></i>
+            </div>
             <h1 id="logo">Ohmyfood</h1>
+            <div></div>
         </nav>
     </header>
     <main class="menu-main-1">
         <div class="img-menu img-menu-1"></div>
-        <section  class="entrée first-entry">
-            <h1 class="menu-title">À la francaise </h1> <i class="fa-regular fa-heart menu-heart"></i>
+        <section class="entrée first-entry">
+            <div class="menu-t">
+                <h1 class="menu-title">À la francaise </h1>
+                <div class="icon-t"><i class="fa-regular fa-heart menu-heart"></i></div>
+            </div>
             <h3 class="category-title">
                 ENTREES
             </h3>
@@ -47,10 +56,10 @@
                     <div class="select"><i class="fa-solid fa-circle-check"></i></div>
                 </li>
             </ul>
-            
+
         </section>
-        <section  class="entrée">
-            <h3  class="category-title off-ctgTitle">
+        <section class="entrée">
+            <h3 class="category-title off-ctgTitle">
                 PLATS
             </h3>
             <ul class="category dish">
@@ -79,9 +88,9 @@
                     <div class="select"><i class="fa-solid fa-circle-check"></i></div>
                 </li>
             </ul>
-            
+
         </section>
-        <section  class="entrée entrée-last">
+        <section class="entrée entrée-last">
             <h3 class="category-title">
                 DESSERT
             </h3>
@@ -114,7 +123,7 @@
                 </li>
             </ul>
             <button type="button" class="order-btn">commander</button>
-            
+
         </section>
 
     </main>
@@ -128,4 +137,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

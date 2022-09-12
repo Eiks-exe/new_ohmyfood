@@ -99,13 +99,18 @@
   .text{
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
-    font-weight: 900;
-    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    font-weight: 700;
+    font-size: 17,5px;
+    text-align: justify;
+    width: 70%;
+    margin: 0;
   }
   .icon-d{
     color:rgb(94, 94, 94);
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -122,6 +127,7 @@
   pointer-events: none;
 }
 
+
 .number{
   position: relative;
   background: #9356DC;
@@ -132,14 +138,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 165px;
+  right: 155px;
   color: white;
   &:nth-child(1){
     @include for-desktop {
       position: relative;
-      right: 245px;
+      right: 220px;
     }
   }
+ 
 }
 
 #restaurant {

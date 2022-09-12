@@ -52,7 +52,7 @@
         color: white;
     }
     @include for-desktop {
-       
+       margin-bottom: 5%;
     }
     @include mobile {
         height: 70px;
