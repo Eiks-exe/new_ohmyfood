@@ -136,7 +136,7 @@
 }
 .price {
   position: relative;
-  left: 50px;
+  left: 45px;
   top: 30px;
   transition: transform 500ms ease-in-out;
   text-align: center;
@@ -147,8 +147,7 @@
   @include for-desktop {
     left: 30px;
   }
-  @include tablet {
-  }
+  
 }
 
 .category-item {
@@ -191,9 +190,6 @@
   }
   &:hover .item-text {
     width: 50%;
-    @include tablet {
-      width: 70%;
-    }
   }
   &:hover .fa-circle-check {
     animation: 1 ease-in 1s spin;
@@ -208,8 +204,8 @@
     height: 100%;
     padding-top: 25px;
     @include tablet {
-      font-size: larger;
     }
+
   }
 }
 

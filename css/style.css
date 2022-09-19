@@ -71,6 +71,11 @@ body {
     width: 100%;
     margin-left: 10%; } }
 
+.back_link {
+  color: black; }
+  .back_link:visited {
+    color: black; }
+
 .top-btn {
   border: none;
   height: 35px;
@@ -642,7 +647,7 @@ footer {
 
 .price {
   position: relative;
-  left: 50px;
+  left: 45px;
   top: 30px;
   transition: transform 500ms ease-in-out;
   text-align: center;
@@ -687,9 +692,6 @@ footer {
       opacity: 1; }
   .category-item:hover .item-text {
     width: 50%; }
-    @media (min-width: 0px) {
-      .category-item:hover .item-text {
-        width: 70%; } }
   .category-item:hover .fa-circle-check {
     animation: 1 ease-in 1s spin; }
   .category-item .item-text {
@@ -700,9 +702,6 @@ footer {
     font-size: 18px;
     height: 100%;
     padding-top: 25px; }
-    @media (min-width: 0px) {
-      .category-item .item-text {
-        font-size: larger; } }
 
 .img-menu {
   height: 300px; }

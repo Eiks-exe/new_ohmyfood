@@ -50,10 +50,7 @@ body {
   }
 }
 
-.item-title{
-  @include mobile {
-  }
-}
+
 
 @include mobile {
   
@@ -61,5 +58,12 @@ body {
     text-align: left;
     width: 100%;
     margin-left: 10%;
+  }
+}
+
+.back_link{
+  color: black;
+  &:visited{
+    color: black;
   }
 }
