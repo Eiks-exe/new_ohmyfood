@@ -75,7 +75,9 @@
 .number-container{
   position: absolute;
   pointer-events: none;
-  
+  @include for-desktop {
+
+  }
 }
 
 .step, .number-wrap {
@@ -87,7 +89,7 @@
   justify-content: center;
   align-items: center;
   @include for-desktop{
-    width: 26%;
+    width: 22%;
   }
 }
 
@@ -143,7 +145,7 @@
   &:nth-child(1){
     @include for-desktop {
       position: relative;
-      right: 220px;
+      right: 190px;
     }
   }
  
@@ -312,11 +314,18 @@
   h1{
     font-size: 32px;
     margin: 20px;
+    @include for-desktop {
+      align-self: flex-start;
+      margin-left: 18.8%;
+    }
   }
 }
 #restaurant{
   h1{
     font-size: 32px;
+    @include for-desktop {
+      margin-left: 15%;
+    }
   }
 }
 
