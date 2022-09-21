@@ -146,6 +146,7 @@
   font-weight: 900;
   @include for-desktop {
     left: 30px;
+    top: 5rem;
   }
   
 }
@@ -170,6 +171,11 @@
       right: -85px;
       margin: 0;
     }
+    @include pro {
+      width: 150px;
+      right: -120px;
+      margin: 0;
+    }
   }
   &:hover .select {
     opacity: 1;
@@ -177,11 +183,19 @@
     @include tablet {
       transform: translate(-80px);
     }
+    @include pro {
+      transform: translate(-100px);
+    }
+    
   }
   &:hover .price {
     opacity: 1;
     transform: translate(-40px);
     @include tablet {
+      transform: translate(-40px);
+    }
+    @include pro {
+      margin: 0;
       transform: translate(-40px);
     }
     &:before {
@@ -202,9 +216,7 @@
     white-space: nowrap;
     font-size: 18px;
     height: 100%;
-    padding-top: 25px;
-    @include tablet {
-    }
+    padding: 2rem 3rem 0 0;
 
   }
 }
@@ -215,6 +227,14 @@
 
 .category-item {
   min-width: 300px;
+  @include pro {
+    min-height: 150px;
+    font-size: xx-large;
+    .item-text{
+      padding: 3rem 1.5rem 0 1rem ;
+      font-size: xx-large;
+    }
+  }
 }
 
 .entrée {

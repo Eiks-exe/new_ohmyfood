@@ -19,3 +19,9 @@
         @content;
     }
 }
+
+@mixin pro {
+    @media (min-width: 912px) {
+        @content;
+    }
+}

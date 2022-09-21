@@ -20,8 +20,9 @@ body {
   width: 100%;
   margin-top: 10%;
   margin-bottom:10%;
-  @include for-desktop {
-   
+  
+  @include pro {
+   font-size: xx-large;
   }
 }
 
@@ -37,6 +38,20 @@ body {
   @include for-desktop {
     width: 100%;
     margin-left: 29%;
+  }
+  @include pro {
+    width: 100%;
+    font-size: xx-large;
+    &::after{
+      display: none;
+    }
+    &::before{
+      content:"____";
+      color: $third;
+      position: relative;
+      top: 10px;
+      left: 7%;
+    }
   }
 }
 
